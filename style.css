@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url("./fondo.jpg");
+    background-position: center;
+}
+
+.principal .card{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    width: 650px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+
+.principal .card .contenido .titulo{
+    text-align: center;
+    color: rgb(48, 48, 48);
+}
+
+.geo{
+    /*color: rgb(133, 82, 244);*/
+    color: #6557d2;
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(48, 48, 48);
+}
+
+.linea{
+    margin-bottom: 10px;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(210, 208, 208, 0.772);
+}
+
+.contenido{
+    min-height: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#comenzar{
+    border: none;
+    border-radius: 25px;
+    padding: 7px;
+    background-color: rgb(73, 158, 103);
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color .3s;
+}
+
+#comenzar:hover{
+    background-color: rgb(84, 183, 119);
+}
+
+.copy{
+    color: rgb(166, 166, 166);
+    text-align: center;
+}
+
+.cuestionario{
+    display: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.active{
+    display: flex;
+    padding: 15px;
+}
+
+.cuestionario .pregunta{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+    margin-bottom: 15px;
+}
+
+.opciones{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuestionario .opciones .opcion{
+    width: 300px;
+    border-radius: 25px;
+    border: 1px solid rgb(165, 163, 163);
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    transition: background-color .3s;
+}
+
+/*.opcion:hover{
+    background-color: rgb(242, 242, 242);
+}*/
+
+.contenedor-valor{
+    width: 35px;
+    display: flex;
+}
+
+.valor{
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.op{
+    width: 100%;
+}
+
+.div-progreso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-progreso .barra{
+    height: 10px;
+    border-radius: 25px;
+    width: 30%;
+    background-color: rgb(184, 184, 184);
+}
+.div-progreso .barra .progreso{
+    background-color: rgb(133, 82, 244);
+    height: 10px;
+    border-radius: 25px;
+    width: 10%;
+}
+
+.siguiente{
+    margin: 10px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 7px;
+    background-color: rgb(73, 158, 103);
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+.siguiente:hover{
+    background-color: white;
+    color: rgb(73, 158, 103);
+    border: 1px solid rgb(73, 158, 103);
+}
+
+.sigui-icon{
+    height: 100%;
+    width: 25px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.div-progreso .cant{
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+}
+
+.correcto{
+    background-color: rgb(58, 171, 58);
+    color: white;
+    border-color:transparent !important;
+    pointer-events: none;
+}
+
+.correcto > .contenedor-valor > span{
+    border-color:white;
+    background-color: white;
+    color: rgb(58, 171, 58);
+}
+
+.incorrecto{
+    background-color: rgb(171, 58, 92);
+    color: white;
+    border-color:transparent !important;
+    pointer-events: none;
+}
+
+.incorrecto > .contenedor-valor > span{
+    border-color:white;
+    background-color: white;
+    color: rgb(171, 58, 92);
+}
+.incorrectoParcial {
+    opacity: 0.4;
+    pointer-events: none;
+}
+.incorrectoParcial  > .contenedor-valor > span{
+    border-color:white;
+    background-color: white;
+    border-color: rgb(171, 58, 92) ;
+    color: rgb(171, 58, 92);
+    
+}
+
+.correctoParcial {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(48, 48, 48);
+    height: 100% !important;
+}
+.resultados .resultado{
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    height: auto;
+}
+
+.resultados .resultados-title{
+    font-size: 29px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.resultados #recargar{
+    border: none;
+    border-radius: 25px;
+    padding: 7px;
+    background-color: rgb(133, 82, 244);
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color .3s;
+}
+
+.volver{
+    margin-top: 20px;
+}
+
+.volver a{
+    color: rgb(52, 49, 212) !important;
+}
+
+
+/*Query*/
+
+@media (max-width:665px){
+    .card{
+        width: 80% !important;
+    }
+    .opciones{
+        width: 100% !important;
+    }
+    .opcion{
+        width: 100% !important;
+    }
+    .copy{
+        font-size:12px;
+    }
+}
+
+@media (max-width:410px){   
+    .card{
+        width: 90% !important;
+    }
+    .principal .card .contenido .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+    .subtitulo{
+        font-size: 15px;
+        text-align: center;
+    }
+    .copy{
+        font-size:8px;
+    }
+    #comenzar{
+        font-size: 15px;
+    }
+    .pregunta{
+        font-size: 15px !important;
+    }
+    .opcion{
+        padding: 7px !important;
+    }
+    .resultados .resultados-title{
+        font-size: 18px;
+    }
+    .resultados .resultado{
+        font-size: 18px;
+    }
+    #recargar{
+        font-size: 15px !important;
+    }
+
+}

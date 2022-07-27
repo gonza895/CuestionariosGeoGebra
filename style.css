@@ -303,6 +303,9 @@
 }
 
 @media (max-width:410px){   
+    .principal{
+        padding:10px;
+    }
     .card{
         width: 100% !important;
     }
@@ -327,7 +330,7 @@
         padding: 7px !important;
     }
     .resultados .resultados-title{
-        font-size: 18px;
+        font-size: 20px;
     }
     .resultados .resultado{
         font-size: 18px;

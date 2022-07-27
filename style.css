@@ -304,7 +304,7 @@
 
 @media (max-width:410px){   
     .card{
-        width: 90% !important;
+        width: 100% !important;
     }
     .principal .card .contenido .titulo{
         font-size: 20px;

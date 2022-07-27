@@ -46,6 +46,7 @@
 
 .titulo{
     font-size: 40px;
+    text-align: center;
 }
 
 .parrafo{
@@ -150,4 +151,20 @@
 .active{
     background-color: #6557D2;
     color: white;
+}
+
+@media (max-width:410px){   
+    .titulo{
+        font-size: 30px;
+    }
+    .parrafo{
+        font-size: 15px;
+    }
+    .listado li{
+        font-size: 15px;
+    }
+    .btn{
+        width: 35px;
+        height: 35px;
+    }
 }

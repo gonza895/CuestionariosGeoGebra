@@ -201,33 +201,33 @@ export const data = [
 
 export const info = [
     {
-        titulo:"Álgebra y composición de funciones"
-    },
-    {
         titulo:"Función definida a trozos"
     },
     {
         titulo:"Transformación de funciones"
+    },
+    {
+        titulo:"Álgebra y composición de funciones"
     },
     {
         titulo:"Función inversa"
     },
     {
+        titulo:"Comando de límites"
+    },
+    {
         titulo:"Comando de derivadas"
     },
     {
-        titulo:"Algebra y composición de funciones"
+        titulo:"Estudio de funciones"
     },
     {
-        titulo:"Función definida a trozos"
+        titulo:"Polinomio de Taylor"
     },
     {
-        titulo:"Transformación de funciones"
+        titulo:"Integrales indefinidas"
     },
     {
-        titulo:"Función definida a trozos"
-    },
-    {
-        titulo:"Transformación de funciones"
+        titulo:"Integrales definidas"
     }
 ]
